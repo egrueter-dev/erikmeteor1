@@ -1,9 +1,8 @@
 if (Meteor.isClient) {
   //subscribe to a collection provided by the server
+  // Helpers
+  //
   Template.body.helpers({
-
-    //// Define resources in the parent
-
     resolutions: function() {
       if(Session.get('hideFinished')) {
         return Resolutions.find({checked: {$ne: true}});

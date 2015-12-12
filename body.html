@@ -1,7 +1,6 @@
 <head>
   <title>demo_app</title>
 </head>
-
 <body>
   <div class="container">
     <header>
@@ -25,11 +24,3 @@
 </div>
 {{ > loginButtons }}
 </body>
-
-<template name="resolution">
-  <li class="{{#if checked}}checked{{/if}}">
-   <input type="checkbox" checked="{{checked}}" class="toggle-checked">
-    <span class="text">{{title}}</span>
-  <li>{{title}} <button class="delete">delete</button></li>
-  </li>
-</template>
